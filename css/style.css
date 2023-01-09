@@ -1,0 +1,125 @@
+:root{
+    --color-primary:#BB86FC;
+    --color-primaryVariant:#3700B3;
+    --color-secondary:#03DAC6;
+    --color-background:#121212;
+    --color-surface:#121212;
+    --color-error:#CF6679;
+    --color-white:#FFF;
+    --color-black:#000;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background: var(--color-background);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    background-color: var(--color-white);
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    line-height: 30px;
+    margin: auto;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 40px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.inline-area{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.input-area{
+    padding: 10px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}
+
+input{
+    background-color: #eee;
+    padding: 10px;
+    border: 0;
+    height: 1.5rem;
+    outline: none;
+}
+
+textarea{
+    background-color: #eee;
+    border: 0;
+    padding: 12px;
+}
+
+.form-contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-contato h1{
+    text-align: center;
+    font-size: 1.5rem;
+    color: #555;
+    padding: 0;
+    margin: 0;
+}
+
+.form-contato label{
+    font-weight: bold;
+    color: #555;
+    font-size: 0.8rem;
+}
+
+.button-area{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 10px;
+}
+
+.btn-1{
+    padding: 8px 20px;
+    background: none;
+    border: none;
+    border-radius: 2px;
+    border: 1px solid var(--color-surface);
+}
+
+.btn-submit{
+    padding: 8px 20px;
+    background: none;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+   
+}
+
+.btn-1:hover{
+    cursor: pointer;
+    
+}
+
+.btn-submit{
+    background-color: white;
+    color: var(--color-black);
+    border: 1px solid var(--color-surface);
+}
+
+.btn-submit:hover{
+    background-color: var(--color-secondary);
+}
+
+.btn-1:hover{
+    background-color: var(--color-error);
+}
